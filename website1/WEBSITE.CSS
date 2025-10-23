@@ -1,0 +1,436 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    /* background-image: url('https://i.pinimg.com/originals/62/39/4d/62394d753859943e6a1a36443ef78795.gif'); */
+    font-family: Cooper Black;
+    background-color: rgb(90, 184, 247);
+}
+
+section{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 100vh;
+    background-image: url('https://wallpapercave.com/wp/wp7981951.gif');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(24, 24, 168);
+    border-radius: 80px;
+    height: 20vh;
+    padding: none;
+    margin-top: 7rem;
+    margin-bottom: 1rem;
+    margin-right: 30rem;
+    margin-left: 30rem;
+    box-shadow: 0 0 20px 15px rgb(51, 51, 180);
+    background-color:black;
+    visibility: hidden;
+    opacity: 0;
+    animation: show-content 1.5s linear forwards;
+    animation-delay: 1.2s;
+}
+.h2 h2 {
+    color: white;
+    font-size: 2.3rem;
+    margin-left: 10rem;
+    
+}
+.h2 h2 span{
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: .7px white;
+    animation: display-text 16s linear infinite;
+    animation-delay: calc(-4s * var(--i));
+       
+    }
+    @keyframes display-text {
+        25%,
+        100% {
+            display: none;
+        }
+    }
+    .h2 h2 span::before {
+        content: attr(data-text);
+        width: 0;
+        border-right: 2px solid white;
+        color: white;
+        position: absolute;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: fill-text 4s linear infinite;
+    }
+    
+    @keyframes fill-text {
+        10%,
+        100% {
+            width: 0;
+        }
+        70%,
+        90% {
+            width: 100%;
+        } 
+    }
+
+.p1{
+    margin-right: 20rem;
+    color: white;
+    font-size: 1rem;
+    margin-left: 10rem;
+    }
+.h1{
+    margin-right: 10rem;
+    margin-left: 10rem;
+    color: white;
+    font-size: 4rem;    
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+    height: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    visibility: hidden;
+    opacity: 0;
+    animation: show-content 1.5s linear forwards;
+    animation-delay: 1.2s;
+}
+/* button{
+    display: inline-flex;
+     gap: 10px;
+     align-items: center;
+     background-color: transparent;
+     border: transparent;
+     padding-block: 0.8rem;
+     padding-inline: 2rem;
+     font-size: 20px;
+     cursor: pointer;
+     margin-left: 80px;
+     margin-right: 70px;
+     border-radius: 10px;
+     color: aqua;
+     visibility: hidden;
+    opacity: 0;
+    animation: show-content 1.5s linear forwards;
+    animation-delay: 1.2s;
+     
+}               
+button:hover,:focus{
+    transition: all 400ms ease-in;
+    background-color: rgb(102, 117, 131);
+    box-shadow: 0 0 15px 15px rgb(24, 180, 102);
+    border: none;
+} */
+.second{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* justify-items: center; */
+    /* background-color: blue; */
+    padding: 40px;
+    margin-top: 10rem;
+    margin-bottom: none;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 100px;
+    box-shadow: 0 0 20px 15px rgb(51, 51, 180);
+    visibility: hidden;
+    opacity: 0;
+    animation: show-content 1.5s linear forwards;
+    animation-delay: 1.2s;
+    ul,li {
+        font-size: 3rem;
+        margin: 5px;
+        color: white;
+        padding: 0.3;
+        
+    }
+    p{
+        color: white;
+        font-size: 2rem;
+        margin: 20px;
+        padding: 0.5rem;
+        
+    }
+}
+.main2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+    border: 3px solid rgb(24, 24, 168);
+    box-shadow: 0 0 20px 15px rgb(51, 51, 180);
+    margin: 150px;
+    border-radius: 17px;
+    background-color: black;
+    
+}
+.about {
+    display: grid;
+    gap: 200px;
+    grid-template-columns: auto auto auto;
+    margin-top: 2rem;
+    text-align: left;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    background-image: url('https://i.makeagif.com/media/11-05-2021/Z5Luzw.gif');
+    background-repeat: no-repeat;
+    background-size: 132rem 37rem;
+    background-position: center;
+    height: 50vh;
+    font-size: 2rem;
+    border: 1px solid transparent;
+    /* border-radius: 45px; */
+    color: white;
+  svg {
+    width: 1.3em;
+  }
+
+  h2 {
+    display: inline;
+  }
+}
+
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  svg {
+    width: 2em;
+  }
+}
+/* .main2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aqua;
+    font-size: 3rem;
+    border: 3px solid rgb(48, 136, 196);
+    margin: 150px;
+    border-radius: 17px;
+    
+}
+.about {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 2rem;
+    text-align: left;
+    padding-block: 2rem;
+    padding-inline: 4rem;
+    background-color: rgb(48, 136, 196);
+    height: 50vh;
+    font-size: 2rem;
+    margin: 70PX;
+    border: 1px solid rgb(48, 136, 196);
+    border-radius: 45px;
+  svg {
+    width: 1.3em;
+  }
+
+  h2 {
+    display: inline;
+  }
+}
+
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  svg {
+    width: 2em;
+  }
+}
+
+.admin{
+    background-image:  url('https://img.freepik.com/free-vector/background-realistic-abstract-technology-particle_23-2148431735.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    
+}
+.experience{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://img.freepik.com/free-vector/background-realistic-abstract-technology-particle_23-2148431735.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.main3{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem ;
+    border: 3px solid rgb(48, 136, 196);
+    border-radius: 17px;
+    color: aqua;
+    margin: 150px;
+}
+.main4{
+    margin-left: 190px;
+    margin-top: 50px;
+    font-size: 2rem;
+    color: rgb(72, 72, 177);
+} */
+img{
+    border-radius: 50%;
+    margin-top: -5px;
+}
+
+
+.home-img .img-box {
+    position: relative;
+    width: 8vw;
+    height: 8vw;
+    background: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.home-img .img-box::before,
+.home-img .img-box::after {
+    content: '';
+    position: absolute;
+    width: 630px;;
+    height: 630px;
+    background: conic-gradient(transparent, transparent, transparent, rgb(10, 211, 238));
+    transform: rotate(0deg);
+    animation: rotate-border 10s linear infinite;
+}
+
+.home-img .img-box::after {
+    animation-delay: -5s;
+}
+
+@keyframes rotate-border {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.home-img .img-box .img-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden;
+    border: 1px solid rgb(22, 22, 161);
+}
+
+.home-img .img-box .img-item img {
+    position: absolute;
+    display: block;
+    width: 85%;
+    object-fit: cover;
+    mix-blend-mode: lighten;
+}
+.icon2 {
+    background-image: url('https://i.pinimg.com/originals/10/bb/66/10bb6612a48fedd121c8de06199d81a1.gif');
+    padding: 10px;
+    background-size: 120%;
+    background-position: center;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}   
+a{
+    color: rgb(10, 211, 238);
+    text-decoration: none;
+}
+.nav {
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    animation: show-content 1.5s linear forwards;
+    animation-delay: 1.2s;
+    position: fixed;
+    margin-left: 400px;
+    margin-right: 700px;
+    z-index: 1;
+}
+@keyframes show-content{
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+.nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -325px;
+    margin-top: -100px;
+    gap: 200px;
+}
+.nav li {
+    list-style: none;
+    margin-left: 25px;
+    font-size: 4rem 4rem;
+    border-radius: 20px;
+    padding: 10px;
+    /* background-color: black;
+    box-shadow: 0 0 20px 10px rgb(51, 51, 180); */
+}   
+.nav ul li a {
+    font-size: 40px;
+    font-weight: 500;
+    transition: .5s;
+    color: white;
+}
+.nav ul li:hover a, 
+.nav ul li.active a{
+    color: rgb(137, 255, 255);
+}
+.bars-animation {
+    margin-top: -110px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: -1;
+}
+.bars-animation .bar {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.pinimg.com/originals/62/39/4d/62394d753859943e6a1a36443ef78795.gif');
+    background-repeat: no-repeat;
+    background-size: 210vh;
+    /* border: 2px solid red; */
+    transform: translateY(-110%);
+    animation: show-bars .5s ease-in-out forwards;
+    animation-delay: calc(.1s * var(--i));
+}
+@keyframes show-bars {
+    100%{
+        transform: translateY(0%);
+    }
+}
